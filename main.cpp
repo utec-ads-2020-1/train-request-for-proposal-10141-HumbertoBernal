@@ -55,7 +55,8 @@ using namespace std;
                 }
 
             }
-
+            if (numberRFP > 1)
+                cout << endl;
             cout << "RFP #" << numberRFP << endl;
             cout << proposalNameSelected << endl;
         }
