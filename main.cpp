@@ -21,18 +21,8 @@ using namespace std;
 
             for (int k = 0; k < proposalNumber ; ++k) {
                 getline(cin, proposalName);
+
                 cin >> price >> metRequirementsNumber;
-
-
-                numberOfRequirementsMet = 0;
-                for (int j = 0; j <= metRequirementsNumber; ++j) {
-                    getline(cin, requirement);
-                    for (int l = 0; l < generalRequirementNumber ; ++l) {
-                        if (requirement == generalRequirements[l] ){
-                            ++numberOfRequirementsMet;
-                        }
-                    }
-                }
 
                 compliance = ((float)metRequirementsNumber/(float)generalRequirementNumber);
 
@@ -55,8 +45,9 @@ using namespace std;
                 }
 
             }
-            cout <<"RFP #" << numberRFP << "\n";
-            cout <<proposalNameSelected << "\n\n";
+
+            cout <<"RFP #" << numberRFP << endl;
+            cout <<proposalNameSelected << "\n" << endl;
         }
         
         return 0;
